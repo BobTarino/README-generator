@@ -5,6 +5,9 @@ function licenseBadge(license){
     return `
     ![badgeImage](https://img.shields.io/badge/license-${license}-blue)`
   }
+  else {
+    return ""
+  }
 }
 
 // TODO: Create a function that returns the license link
@@ -25,14 +28,16 @@ function renderLicenseSection(license) {
     return `## License
     Licensed under ${license}`
   }
-
+  else {
+    return ""
+  }
 
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${licenseBadge(data.license)}
+    ${licenseBadge(data.license)}
     ## Description
     ${data.description}
     \`\`\`
