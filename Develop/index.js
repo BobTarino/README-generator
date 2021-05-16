@@ -28,8 +28,8 @@ return inquirer
         {
             type: "input",
             name: "installation",
-            message: "Please provide the  steps required for installation:",
-            default: "![screenshotImage](assets/images/readme-gen_screenshot.png)"
+            message: "Please provide the steps required for installation:",
+            default: "![screenshotImage](./assets/images/readme-gen_screenshot.png)"
             
         },
 

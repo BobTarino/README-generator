@@ -2,8 +2,7 @@
 // If there is no license, return an empty string
 function licenseBadge(license){
   if (license !== "none"){
-    return `
-    ![badgeImage](https://img.shields.io/badge/license-${license}-blue)`
+    return `![badgeImage](https://img.shields.io/badge/license-${license}-blue)`
   }
   else {
     return ""
@@ -37,34 +36,29 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-    ${licenseBadge(data.license)}
-    ## Description
-    ${data.description}
-    \`\`\`
-    ## Table of contents
-    *[Installation](#installation)
-    *[Usage](#usage)
-    ${licenseLink(data.license)}
-    *[Contributing](#contributing)
-    *[Test](#test)
-    ## Installation
-    To install dependancies, run the following commands:
-    \`\`\`
-    ${data.installation}
-    \`\`\`
-    ## Usage
-    ${data.usage}
-    ${renderLicenseSection(data.license)}
-    ## Contributing
-    ${data.contributing}
-    ## Test
-    \`\`\`
-    ${data.test}
-    \`\`\`
-    ## Questions
-    If you have questions about this repository, please contact me at ${data.email}
-    You can see any of my other work at [${data.github}](https://github.com/${data.github}/)
-    `;
+
+${licenseBadge(data.license)}
+## Description
+${data.description}
+## Table of contents
+* [Installation](#installation)
+* [Usage](#usage)
+${licenseLink(data.license)}
+* [Contributing](#contributing)
+* [Test](#test)
+## Installation
+${data.installation}
+## Usage
+${data.usage}
+${renderLicenseSection(data.license)}
+## Contributing
+${data.contributing}
+## Test
+${data.test}
+## Questions
+If you have questions about this repository, please contact me at ${data.email}
+You can see any of my other work at [${data.github}](https://github.com/${data.github}/)
+`;
 }
 
 module.exports = generateMarkdown;
