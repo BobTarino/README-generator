@@ -1,3 +1,24 @@
-# Professional README Generator Starter Code
+# readme-generator
 
-[How to create a Professional README](./readme-guide.md)
+![badgeImage](https://img.shields.io/badge/license-MIT-blue)
+## Description
+Generates README file
+## Table of contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Test](#test)
+## Installation
+![screenshotImage](./assets/images/readme-gen_screenshot.png)
+## Usage
+n/a
+## License
+    Licensed under MIT
+## Contributing
+n/a
+## Test
+n/a
+## Questions
+If you have questions about this repository, please contact me at bob.tarino@gmail.com
+You can see any of my other work at [BobTarino](https://github.com/BobTarino/)
